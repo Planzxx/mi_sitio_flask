@@ -5,6 +5,11 @@
 {% block content %}
 <section class="panel">
   <h1>Mi página de inicio</h1>
-  <p>Esta es una web de prueba hecha con Flask.</p>
+  <h2>Nuestros Cursos</h2>
+  <ul>
+      {% for curso in cursos %}
+          <li>{{ curso }}</li>
+      {% endfor %}
+  </ul>
 </section>
 {% endblock %}

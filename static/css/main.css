@@ -1,9 +1,9 @@
 :root {
-  --color-cabecera: #DFB887;
-  --color-panel:    #E6E6FA;
-  --color-texto:    #006600;
-  --color-logo:     #3b2410;
-  --color-enlace:   #444;
+  --color-cabecera: #FFCE70;
+  --color-panel:    #D9CEAD;
+  --color-texto:    #0D1326;
+  --color-logo:     #7890BF;
+  --color-enlace:   #8FAFD9;
 }
 
 *, *::before, *::after { box-sizing: border-box; }

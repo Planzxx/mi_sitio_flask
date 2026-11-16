@@ -5,12 +5,21 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return render_template("home.html")
+    lista_cursos = ["Python Básico","Desarrollo con Flask", "Análisis de datos con Pandas"]
+    return render_template("home.html", cursos= lista_cursos)
 
 
 @app.route("/about/")
 def about():
     return render_template("about.html")
+
+@app.route("/contacto/")
+def contacto():
+    return render_template("contacto.html")
+
+@app.route("/hola/<nombre>")
+def saludo(nombre):
+    return render_template("saludo.html", nombre=nombre)
 
 
 @app.errorhandler(404)
