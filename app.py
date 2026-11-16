@@ -2,10 +2,10 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
+lista_cursos = ["Python Básico","Desarrollo con Flask", "Análisis de datos con Pandas"]
 
 @app.route("/")
 def home():
-    lista_cursos = ["Python Básico","Desarrollo con Flask", "Análisis de datos con Pandas"]
     return render_template("home.html", cursos= lista_cursos)
 
 
